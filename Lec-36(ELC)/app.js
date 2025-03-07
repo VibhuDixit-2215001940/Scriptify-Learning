@@ -2,7 +2,7 @@ let grandParent = document.getElementById('grandParent');
 let Parent = document.getElementById('Parent');
 let child = document.getElementById('child');
 
-//EVENT BUBBLING
+// //EVENT BUBBLING
 // grandParent.addEventListener('click',function (){
 //     console.log("Grand Parent clicked!!")
 // })
@@ -13,7 +13,7 @@ let child = document.getElementById('child');
 //     console.log("Child clicked!!")
 // })
 
-//EVENT BUBBLING Explicitly writting false!! printing value when ladder going back!!
+// EVENT BUBBLING Explicitly writting false!! printing value when ladder going back!!
 // grandParent.addEventListener('click',function (){
 //     console.log("Grand Parent clicked!!")
 // },false)
@@ -32,7 +32,7 @@ grandParent.addEventListener('click',function (){
     console.log("Grand Parent clicked!!")
 },true)
 Parent.addEventListener('click',function (event){
-    event.stopPropagation();//will stop the propogation
+    // event.stopPropagation();//will stop the propogation
     console.log("Parent clicked!!")
 },true)
 child.addEventListener('click',function (){
